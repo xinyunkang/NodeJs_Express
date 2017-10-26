@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/xinyunkang/NodeJs_Express#readme",
   "dependencies": {
-    "express": "^4.16.2"
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "jade": "^1.11.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

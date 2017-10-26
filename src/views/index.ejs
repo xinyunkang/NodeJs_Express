@@ -6,27 +6,23 @@
 		<title>Storystrap Template</title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		
-        
         <!--bower:css-->
         <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
         <!--endbower-->
-        <!--bower:js -->
+        <!-- bower:js -->
         <script src="/lib/jquery/dist/jquery.js"></script>
         <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
-        <!--endbower-->
-        <!--inject:css-->
+        <!-- endbower -->
+        <!-- inject:css-->
         <link rel="stylesheet" href="/css/styles.css">
-        <!--endinject-->
+        <!-- endinject-->
         <!--inject:js-->
         <script src="/js/app.js"></script>
         <!--endinject-->
-        
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		
 	</head>
 	<body>
 <header class="navbar navbar-bright navbar-fixed-top" role="banner">
@@ -42,18 +38,9 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-        <li>
-          <a href="#">Category</a>
-        </li>
-        <li>
-          <a href="#">Category</a>
-        </li>
-        <li>
-          <a href="#">Category</a>
-        </li>
-        <li>
-          <a href="#">Category</a>
-        </li>
+            <% for(var i=0; i<list.length;i++){%>
+                <li><a><%=list[i]%></a></li>
+            <%}%>
       </ul>
       <ul class="nav navbar-right navbar-nav">
         <li class="dropdown">
@@ -261,7 +248,5 @@
     </div>
   </div>
 </footer>
-	<!-- script references -->
-		
 	</body>
 </html>
